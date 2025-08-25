@@ -2,7 +2,7 @@ import React from 'react';
 import ReactDOM from 'react-dom/client';
 import './index.css';
 import App from './App';
-import reportWebVitals from './reportWebVitals';
+import './index.css';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
@@ -11,7 +11,29 @@ root.render(
   </React.StrictMode>
 );
 
-// If you want to start measuring performance in your app, pass a function
-// to log results (for example: reportWebVitals(console.log))
-// or send to an analytics endpoint. Learn more: https://bit.ly/CRA-vitals
-reportWebVitals();
+
+export const ContactCard = ({data}) => {
+
+return (
+
+<div className='numbers'>
+
+<h3 className='h3'>{data.firstName}</h3>
+
+<h3 className='h3'>{data.lastName}</h3>
+
+
+<p className='p1'>{data.phone}</p>
+
+<p className='space'></p>
+
+
+<p className='p2'>{data.gender}</p>
+
+
+</div>
+
+)
+
+
+}
