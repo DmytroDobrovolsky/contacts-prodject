@@ -38,21 +38,6 @@
     background-color: #f44336;
 }
 
-.searchBtn {
-
-    background-color: #C5BAFF;
-    margin-top: 27px;
-    height: 45px;
-    border-radius: 20px;
-    width: 70px;
-    font-style: italic;
-    letter-spacing: 1px;
-    border: 0.8px solid #9389c6;
-    color: #626161;
-    cursor: pointer;
-
-}
-
 .allCntBtn {
 
     background-color: #C5BAFF;
