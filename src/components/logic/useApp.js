@@ -17,7 +17,6 @@ export const useApp = (params) => {
     const [isNoGender, setNoGender] = useState(true);
 
     const filterContacts = (options) => {
-
         if (options.isMale === false && options.isNoGender === true && options.isFemale === true) {
             const filteredContc = contacts.filter(contact =>
                 contact.gender === "female" || contact.gender == null
@@ -57,7 +56,6 @@ export const useApp = (params) => {
         else {
             setAllContacts(contacts)
         }
-
     }
 
     const handlerMaleClick = () => {
@@ -69,8 +67,6 @@ export const useApp = (params) => {
             isFemale,
             isNoGender,
         })
-
-
     }
 
     const handlerFemaleClick = () => {
@@ -81,9 +77,9 @@ export const useApp = (params) => {
             isFemale: newValue,
             isMale,
             isNoGender,
-
         })
     }
+
     const handlerNoGenderClick = () => {
         const newValue = !isNoGender;
 

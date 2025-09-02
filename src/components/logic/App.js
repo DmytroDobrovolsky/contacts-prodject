@@ -40,10 +40,9 @@ export const contacts = [
 
 
 export const App = (params) => {
+  const { handlerChange, handlerAllContactsClick, handlerMaleClick, handlerFemaleClick, handlerNoGenderClick, allContacts, isNoGender, isFemale, isMale, name } = useApp();
 
-  const {  handlerChange,handlerAllContactsClick,handlerMaleClick,handlerFemaleClick,handlerNoGenderClick,allContacts,isNoGender,isFemale,isMale,name} = useApp();
-
-return (<div className='App'>
+  return (<div className='App'>
     <h1 className='h1'>Your contacts</h1>
     <input className='input' placeholder="Contact name" value={name} onChange={handlerChange} />
     <button className='allCntBtn' onClick={handlerAllContactsClick}>All contacts</button>
@@ -56,7 +55,6 @@ return (<div className='App'>
     )}
   </div>
   );
-
 }
 
 
